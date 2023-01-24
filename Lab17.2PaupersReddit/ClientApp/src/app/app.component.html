@@ -1,0 +1,23 @@
+<h1>Data from Reddit</h1>
+
+<!--div *ngFor="let item of redditresults ">
+
+
+  Title: {{item.title}}
+  Thumbnail: {{item.thumbnail}}
+  Link: {{item.permalink}}
+</div>-->
+
+<button (click)="loadPRData()"> Pauper's Reddit Data</button>
+
+<ng-container *ngIf="reddit != null">
+
+  <h1> Pauper's Reddit Data </h1>
+
+  {{reddit.title}} <br />
+  {{reddit.thumbnail}} <br />
+  {{reddit.permalink}} 
+
+
+
+</ng-container>
